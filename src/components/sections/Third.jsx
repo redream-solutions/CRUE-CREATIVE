@@ -39,7 +39,7 @@ const Home = () => {
       >
      <p className="end-tezxt"
         data-scroll data-scroll-speed="-2">
-          Cure creative is a digital agecny based in Sri Lanka <br />
+          CreateX is a digital agency based in London <br />
           our aim is to win awwwards as being part of its community <br />
           Not just awwwards to, we won't to provide our customers with <br />
           the best digital experience they could ever imagine of.

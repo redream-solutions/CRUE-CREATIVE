@@ -80,7 +80,7 @@ const CoverVideo = () => {
             data-scroll-delay=".12"
             data-scroll-speed="2"
           >
-            <p className="cover-head-vid">Crue Creative</p>
+            <p className="cover-head-vid">CreateX</p>
           </motion.h1>
         </div>
        

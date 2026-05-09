@@ -55,7 +55,7 @@ const Footer = () => {
       <LogoContainer>
         
         <h3 data-scroll data-scroll-speed="-1">
-          Crue Creative
+          CreateX
         </h3>
       </LogoContainer>
       
@@ -72,14 +72,7 @@ const Footer = () => {
             data-scroll-speed="-2"
             data-scroll-direction="horizontal"
           >
-            Crafted by -
-            <a
-              href="https://www.instagram.com/chaniru.lk/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              @chaniru.lk
-            </a>
+            Crafted by re'Dream
           </span>
         </Bottom> 
     </SectionWrapper>

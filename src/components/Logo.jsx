@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import imga from "../assets/img/f1.png";
 const Container = styled.div`
 `;
 
@@ -61,12 +60,14 @@ li a:hover:after{
 
 
 .logo-av{
-  position:absolute;
-  top: -57.5px;
-  left: 5px;
-  height: 160px;
-  width: 160px;
-  
+  position: absolute;
+  top: 4px;
+  left: 20px;
+  font-family: domaine;
+  font-size: 2.2rem;
+  color: #000000;
+  line-height: 1;
+  letter-spacing: 0.02em;
 }
 
 `;
@@ -117,11 +118,11 @@ const Logo = () => {
         >
       <div className='bar-nav'>
         <ul>
-         <img className="logo-av" src={imga} alt="" />
-        <li><a href="https://www.instagram.com/chaniru.lk/">About</a></li>
-        <li><a href="https://www.instagram.com/chaniru.lk/">Contact</a></li>
-        <li><a href="https://www.instagram.com/chaniru.lk/">News</a></li>
-        <li><a class="active" href="https://www.instagram.com/chaniru.lk/">Home</a></li>
+         <span className="logo-av">CreateX</span>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">News</a></li>
+        <li><a class="active" href="#">Home</a></li>
           
           
           

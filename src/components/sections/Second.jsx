@@ -39,7 +39,7 @@ const Home = () => {
         data-scroll
    
       >
-      <a href='https://www.instagram.com/chaniru.lk/' className="prod-text-one"
+      <a href='#' className="prod-text-one"
       data-scroll  
       data-scroll-delay=".12"
       data-scroll-speed="-2">Caron</a>
@@ -48,7 +48,7 @@ const Home = () => {
       data-scroll-delay=".12"
       data-scroll-speed="-3" />
 
-      <a href='https://www.instagram.com/chaniru.lk/' className="prod-text-two"
+      <a href='#' className="prod-text-two"
       data-scroll  
       data-scroll-delay=".12"
       data-scroll-speed="-2">Amana</a>
@@ -57,7 +57,7 @@ const Home = () => {
       data-scroll-delay=".12"
       data-scroll-speed="-3" />
 
-      <a href='https://www.instagram.com/chaniru.lk/' className="prod-text-three"
+      <a href='#' className="prod-text-three"
       data-scroll  
       data-scroll-delay=".12"
       data-scroll-speed="-2">TwentySix</a>
@@ -66,7 +66,7 @@ const Home = () => {
       data-scroll-delay=".12"
       data-scroll-speed="-3" />
 
-      <a href='https://www.instagram.com/chaniru.lk/' className="prod-text-four"
+      <a href='#' className="prod-text-four"
       data-scroll  
       data-scroll-delay=".12"
       data-scroll-speed="-2">PARADIS</a>
@@ -75,7 +75,7 @@ const Home = () => {
       data-scroll-delay=".12"
       data-scroll-speed="-3" />
 
-      <a href='https://www.instagram.com/chaniru.lk/' className="prod-text-five"
+      <a href='#' className="prod-text-five"
       data-scroll  
       data-scroll-delay=".10"
       data-scroll-speed="-1">NUTMEG.GINGER</a>
@@ -84,7 +84,7 @@ const Home = () => {
       data-scroll-delay=".10"
       data-scroll-speed="-2" />
 
-      <a href='https://www.instagram.com/chaniru.lk/' className="prod-text-six"
+      <a href='#' className="prod-text-six"
       data-scroll  
       data-scroll-delay=".12"
       data-scroll-speed="-1">Aymddesigns</a>
@@ -93,7 +93,7 @@ const Home = () => {
       data-scroll-delay=".12"
       data-scroll-speed="-3" />
 
-      <a href='https://www.instagram.com/chaniru.lk/' className="prod-text-seven"
+      <a href='#' className="prod-text-seven"
       data-scroll  
       data-scroll-delay=".12"
       data-scroll-speed="-2">Agnes</a>

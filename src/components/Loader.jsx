@@ -95,7 +95,7 @@ const Loader = () => {
         initial="hidden"
         animate="visible"
       >
-       <p className='load-head'>Crue Creative</p><br />
+       <p className='load-head'>CreateX</p><br />
        
       </Text>
       <Text
@@ -103,7 +103,7 @@ const Loader = () => {
         initial="hidden"
         animate="visible"
       >
-        <span className='small-text-load'>A Creative & Digital Studio Based in Sri Lanka</span>
+        <span className='small-text-load'>A Creative & Digital Studio Based in London</span>
     </Text>
     </Container>
   );

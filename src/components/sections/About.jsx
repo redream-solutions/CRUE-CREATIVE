@@ -70,16 +70,16 @@ const Home = () => {
         data-scroll-sticky
         data-croll-direction="#fixed-target"
       >
-       "Creative and ingenious, Crue Creative LK <br />
+       "Creative and ingenious, CreateX <br />
        has a way of making a simple idea/brand <br />
        come to full bloom"
        <br />
-       <span className='small-left'> - a crue creative statement</span>
+       <span className='small-left'> - a CreateX statement</span>
       </LeftContainer>
        
       <TextWrapper >
         <p className="header-sl"
-        data-scroll data-scroll-speed="-2">born in sri lanka</p> 
+        data-scroll data-scroll-speed="-2">born in london</p> 
       </TextWrapper>
     </SectionWrapper>
   );
