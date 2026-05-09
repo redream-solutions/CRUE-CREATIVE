@@ -16,13 +16,6 @@ const TextWrapper = styled.div`
   z-index: 10;
 `;
 
-const TitleWrapper = styled.span`
-  position: absolute;
-  top: 50%;
-  z-index: 10;
-  font-family: domaine;
-`;
-
 const LeftContainer = styled.div`
   width: 100%;
   text-align:center;
@@ -32,32 +25,6 @@ const LeftContainer = styled.div`
   position: absolute;
   text-transform:uppercase;
   z-index: 10;
-`;
-const RightContainer = styled.div`
-  width: 35%;
-  position: relative;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  img {
-    width: 100%;
-    height: auto;
-    border-radius: 2%;
-  }
-
-  .small-img-1 {
-    width: 40%;
-    position: absolute;
-    right: 80%;
-    bottom: 10%;
-  }
-  .small-img-2 {
-    width: 40%;
-    position: absolute;
-    left: 80%;
-    bottom: 30%;
-  }
-
 `;
 
 const Home = () => {

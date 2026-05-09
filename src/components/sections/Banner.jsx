@@ -45,7 +45,7 @@ const Banner = () => {
     <SectionWrapper>
       <Container id="up">
         <BannerComponent>
-          <img src={ban01} className="ban-pic"
+          <img src={ban01} alt="" className="ban-pic"
             data-scroll
             data-scroll-direction="horizontal"
             data-scroll-speed="8"
@@ -54,7 +54,7 @@ const Banner = () => {
           </img>
         </BannerComponent>
         <BannerComponent>
-        <img src={ban02} className="ban-pic"
+        <img src={ban02} alt="" className="ban-pic"
              data-scroll
              data-scroll-direction="horizontal"
              data-scroll-speed="-6"
@@ -63,7 +63,7 @@ const Banner = () => {
           </img>
         </BannerComponent>
         <BannerComponent>
-        <img src={ban03} className="ban-pic"
+        <img src={ban03} alt="" className="ban-pic"
             data-scroll
             data-scroll-direction="horizontal"
             data-scroll-speed="6"
@@ -72,7 +72,7 @@ const Banner = () => {
           </img>
         </BannerComponent>
         <BannerComponent>
-        <img src={ban04} className="ban-pic"
+        <img src={ban04} alt="" className="ban-pic"
            data-scroll
            data-scroll-direction="horizontal"
            data-scroll-speed="-4"

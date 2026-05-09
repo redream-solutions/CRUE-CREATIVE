@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components'; 
-import { useLocomotiveScroll } from 'react-locomotive-scroll';
 import "./foot.css";
 const SectionWrapper = styled.section`
   min-height: 90vh;
@@ -38,18 +37,6 @@ const LogoContainer = styled.div`
 `;
 
 const Footer = () => {
-  const { scroll } = useLocomotiveScroll();
-
-  const handleScroll = (id) => {
-    let elem = document.querySelector(id);
-
-    scroll.scrollTo(elem, {
-      offset: '-100',
-      duration: '2000',
-      easing: [0.25, 0.0, 0.35, 1.0],
-    });
-  };
-
   return (
     <SectionWrapper>
       <LogoContainer>
