@@ -10,31 +10,50 @@ import img09 from '../../assets/img/9.png';
 const SectionWrapper = styled.section`
   min-height: 150vh;
   width: 100%;
+  max-width: 100%;
   position: relative;
   background-color: #000000;
   display: flex;
   margin: 0 auto;
   color: white;
   font-family: 'Albert Sans', sans-serif;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  @media (max-width: 900px) {
+    min-height: auto;
+    flex-direction: column;
+    padding-bottom: 3rem;
+  }
 `;
 
 const TextWrapper = styled.div`
   z-index: 10;
-  @media (max-width: 768px) {
-    display: none;
+  @media (max-width: 900px) {
+    position: relative;
+    width: 100%;
+    padding: 2rem clamp(0.75rem, 3vw, 1.5rem) 0;
+    order: 2;
   }
 `;
 
 const LeftContainer = styled.div`
   z-index: 10;
   overflow: hidden;
-  width:1000px;
-   
+  width: min(1000px, 100%);
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  min-height: 150vh;
+  @media (max-width: 900px) {
+    width: 100%;
+    min-height: auto;
+    order: 1;
+  }
 `;
 
 const Home = () => {
   return (
-    <SectionWrapper id="fixed-target" className="about">
+    <SectionWrapper id="portfolio-scroll" className="about second-showcase">
       <LeftContainer
         data-scroll
    

@@ -21,6 +21,9 @@
     "styled-components": "^5.3.3",
     "web-vitals": "^2.1.4"
   },
+  "overrides": {
+    "memfs": "^3.4.12"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

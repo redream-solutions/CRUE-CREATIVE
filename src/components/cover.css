@@ -6,8 +6,12 @@
 
 .cover-head-vid{
     font-family: 'Albert Sans', sans-serif;
-    font-size: 10em;
+    font-size: clamp(2.75rem, 14vw, 10em);
     color: whitesmoke;
+    text-align: center;
+    line-height: 1.05;
+    word-break: break-word;
+    max-width: 100%;
 }
 
 .vr{

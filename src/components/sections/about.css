@@ -9,7 +9,24 @@
     position: absolute;
     font-family: domaine;
     text-transform: uppercase;
-    font-size: 8em;
+    font-size: clamp(3rem, 18vw, 8em);
     top: 60%;
     left: 5%;
+    max-width: 90%;
+    line-height: 0.95;
+    word-break: break-word;
+}
+.about-intro {
+    overflow-x: hidden;
+}
+@media (max-width: 768px) {
+    .about-intro .header-sl {
+        position: relative;
+        top: auto;
+        left: auto;
+        max-width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 0.25rem;
+    }
 }

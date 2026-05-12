@@ -3,16 +3,18 @@ import styled from 'styled-components';
 import "./foot.css";
 const SectionWrapper = styled.section`
   min-height: 90vh;
-  width: 100vw;
+  width: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  background-color: black; 
-  color:whitesmoke
-
+  background-color: black;
+  color: whitesmoke;
   position: relative;
+  padding: 2rem clamp(0.75rem, 3vw, 2rem);
+  box-sizing: border-box;
+  overflow-x: hidden;
 `;
 const LogoContainer = styled.div`
   font-family: domaine;
@@ -22,18 +24,31 @@ const LogoContainer = styled.div`
   align-items: center;
 
   img {
-    width: 10vw;
+    width: min(10vw, 120px);
     height: auto;
+    max-width: 100%;
   }
   h3 {
     font-family: domaine;
-    font-size: 3em;
+    font-size: clamp(1.75rem, 6vw, 3em);
+    text-align: center;
   }
 `;
  const Bottom = styled.div`
  font-family: domaine;
  color: white;
  font-size:1em;
+ width: 100%;
+ max-width: 100%;
+ position: relative;
+ min-height: 4rem;
+ @media (max-width: 640px) {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 1rem;
+   text-align: center;
+ }
 `;
 
 const Footer = () => {

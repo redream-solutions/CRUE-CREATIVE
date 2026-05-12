@@ -19,12 +19,22 @@ ul {
   border-radius: 20px;
   position: fixed;
   left: 5px;
+  right: 5px;
   top: 10px;
-  width: 99%;
+  width: auto;
+  max-width: calc(100% - 10px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0;
+  row-gap: 0.25rem;
+  box-sizing: border-box;
 }
 
 li {
-  float: right;
+  flex: 0 0 auto;
+  position: relative;
 }
 li a:hover{
   color: rgb(187, 161, 122);
@@ -35,8 +45,9 @@ li a {
   display: block;
   color: #000000;
   text-align: center;
-  padding: 14px 16px;
+  padding: 12px clamp(8px, 2vw, 16px);
   text-decoration: none;
+  font-size: clamp(0.8rem, 2.8vw, 1rem);
 }
 li a:after {
   content: '';
@@ -62,12 +73,31 @@ li a:hover:after{
 .logo-av{
   position: absolute;
   top: 4px;
-  left: 20px;
+  left: 12px;
   font-family: domaine;
-  font-size: 2.2rem;
+  font-size: clamp(1.1rem, 4.5vw, 2.2rem);
   color: #000000;
   line-height: 1;
   letter-spacing: 0.02em;
+}
+
+@media (max-width: 520px) {
+  ul {
+    padding-top: 2.5rem;
+    justify-content: center;
+  }
+  .logo-av {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 8px;
+  }
+  li {
+    flex: 1 1 auto;
+    min-width: 22%;
+  }
+  li a {
+    padding: 10px 8px;
+  }
 }
 
 `;
@@ -106,7 +136,7 @@ const Logo = () => {
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
         <li><a href="#">News</a></li>
-        <li><a class="active" href="#">Home</a></li>
+        <li><a className="active" href="#">Home</a></li>
           
           
           

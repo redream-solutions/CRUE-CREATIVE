@@ -10,6 +10,20 @@ const GlobalStyles = createGlobalStyle`
     *{
         box-sizing: border-box;
     }
+    html {
+        overflow-x: hidden;
+    }
+    #root,
+    .App,
+    [data-scroll-container] {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    img,
+    video {
+        max-width: 100%;
+        height: auto;
+    }
     body {
         font-family: "Monda", sans-serif;
         overflow-x: hidden;

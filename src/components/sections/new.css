@@ -6,14 +6,42 @@
     position: absolute;
     font-family: domaine;
     text-transform: uppercase;
-    font-size: 10em;
+    font-size: clamp(2.5rem, 12vw, 10em);
     top: 68%;
     left: 5%;
+    max-width: 90%;
+    line-height: 0.95;
+    word-break: break-word;
 }
 .end-tezxt{
     position: absolute;
-    font-size: 1.2em;   
+    font-size: clamp(0.95rem, 2.8vw, 1.2em);
     font-family: domaine;
     top: 2%;
-    left: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(36rem, 92%);
+    text-align: center;
+    padding: 0 0.5rem;
+    box-sizing: border-box;
+}
+@media (max-width: 768px) {
+    .cta-section .header-sl-new {
+        position: relative;
+        top: auto;
+        left: auto;
+        max-width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 0.25rem;
+    }
+    .cta-section .end-tezxt {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        width: 100%;
+        max-width: 100%;
+        padding: 0 0.25rem 1rem;
+    }
 }

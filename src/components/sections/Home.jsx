@@ -4,7 +4,8 @@ import Logo from '../Logo';
 
 const SectionWrapper = styled.section`
   min-height: 100vh;
-  width: 100vw;
+  width: 100%;
+  max-width: 100%;
   position: relative;
   overflow: hidden;
 `;

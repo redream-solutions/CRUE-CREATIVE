@@ -29,8 +29,12 @@ const OverLay = styled.div`
 const TitleWrapper = styled(motion.div)`
   position: absolute;
   top: 47%;
-  left: 1%;
+  left: 0;
+  right: 0;
   z-index: 8;
+  width: 100%;
+  padding: 0 clamp(0.75rem, 4vw, 2rem);
+  box-sizing: border-box;
 
   display: flex;
   flex-direction: column;
@@ -38,8 +42,9 @@ const TitleWrapper = styled(motion.div)`
   align-items: center;
   div {
     display: flex;
+    max-width: 100%;
+    justify-content: center;
   }
-  
 `;
 
 const containerVariants = {

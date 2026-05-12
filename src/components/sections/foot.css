@@ -5,17 +5,32 @@
 .credit{
     position: absolute;
     font-family: domaine;
-    font-size: 1.5em;
+    font-size: clamp(0.85rem, 2.5vw, 1.5em);
     color: whitesmoke;
     left: 10%;
+    max-width: 80%;
 }
 .link-ig{
     position: absolute;
     font-family: domaine;
-    font-size: 1.5em;
+    font-size: clamp(0.85rem, 2.5vw, 1.5em);
     color: whitesmoke;
     right: 10%;
+    max-width: 80%;
+    text-align: right;
 }
 .link-ig a{
     font-family: Arial, Helvetica, sans-serif;
+}
+@media (max-width: 640px) {
+    .credit,
+    .link-ig {
+        position: relative;
+        left: auto;
+        right: auto;
+        max-width: 100%;
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
 }

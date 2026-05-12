@@ -179,3 +179,58 @@
     position: absolute;
     text-decoration: none;
 }
+
+@media (max-width: 900px) {
+    .second-showcase .acros-left {
+        position: relative;
+        top: auto;
+        left: auto;
+        font-size: clamp(1.5rem, 7vw, 2.75rem);
+        line-height: 1.25;
+        text-align: center;
+        width: 100%;
+        padding: 0 0.75rem 1rem;
+        box-sizing: border-box;
+    }
+
+    .second-showcase .prod-one,
+    .second-showcase .prod-two,
+    .second-showcase .prod-three,
+    .second-showcase .prod-four,
+    .second-showcase .prod-five,
+    .second-showcase .prod-six,
+    .second-showcase .prod-seven {
+        position: relative !important;
+        display: block;
+        left: auto !important;
+        right: auto !important;
+        top: auto !important;
+        width: min(300px, 88vw) !important;
+        max-width: 100%;
+        height: auto !important;
+        margin: 0.35rem auto 0 !important;
+    }
+
+    .second-showcase .prod-text-one,
+    .second-showcase .prod-text-two,
+    .second-showcase .prod-text-three,
+    .second-showcase .prod-text-four,
+    .second-showcase .prod-text-five,
+    .second-showcase .prod-text-six,
+    .second-showcase .prod-text-seven {
+        position: relative !important;
+        display: block;
+        left: auto !important;
+        right: auto !important;
+        top: auto !important;
+        font-size: clamp(1.1rem, 4.5vw, 1.6rem) !important;
+        text-align: center;
+        margin: 1.75rem auto 0.15rem !important;
+        padding: 0 0.75rem;
+        box-sizing: border-box;
+    }
+
+    .second-showcase .prod-text-one {
+        margin-top: 0.5rem !important;
+    }
+}
