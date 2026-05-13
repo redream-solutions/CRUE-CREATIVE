@@ -67,7 +67,7 @@ const Footer = () => {
             data-scroll-speed="2"
             data-scroll-direction="horizontal"
           >
-            &copy; {new Date().getFullYear()}. All Rights Reserved 2022
+            &copy; {new Date().getFullYear()}. All Rights Reserved
           </span> 
           <span className="link-ig"
             data-scroll
