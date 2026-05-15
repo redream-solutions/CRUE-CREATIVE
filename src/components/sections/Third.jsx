@@ -1,5 +1,6 @@
-import styled from 'styled-components'; 
-import "./new.css";
+import styled from 'styled-components';
+import './new.css';
+
 const SectionWrapper = styled.section`
   min-height: 100vh;
   width: 100%;
@@ -13,67 +14,76 @@ const SectionWrapper = styled.section`
   padding: 0 clamp(0.75rem, 3vw, 2rem);
   box-sizing: border-box;
   overflow-x: hidden;
-  @media (max-width: 768px) {
+  align-items: center;
+  @media (max-width: 900px) {
     min-height: auto;
-    flex-direction: column;
+    align-items: stretch;
   }
 `;
 
-const TextWrapper = styled.div`
-  z-index: 10;
-  @media (max-width: 768px) {
-    order: 2;
-    width: 100%;
-    padding-bottom: 2.5rem;
-  }
-`;
-
-const LeftContainer = styled.div`
+const CtaInner = styled.div`
   width: 100%;
-  text-align: center;
-  top: 40%;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: clamp(0.95rem, 2.5vw, 1.5em);
-  position: absolute;
-  text-transform: uppercase;
-  z-index: 10;
-  padding: 0 0.5rem;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, min(28rem, 44vw));
+  gap: clamp(1.5rem, 5vw, 4rem);
+  align-items: center;
+  padding: clamp(2rem, 6vh, 5rem) 0;
   box-sizing: border-box;
-  max-width: min(48rem, 100%);
-  @media (max-width: 768px) {
-    position: relative;
-    top: auto;
-    left: auto;
-    transform: none;
-    padding: 2.5rem 0 1rem;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    padding: 2.5rem 0 3rem;
+    gap: 2rem;
+  }
+`;
+
+const HeadingBlock = styled.div`
+  min-width: 0;
+  @media (max-width: 900px) {
+    order: 2;
+  }
+`;
+
+const CopyBlock = styled.div`
+  min-width: 0;
+  justify-self: end;
+  align-self: center;
+  width: 100%;
+  max-width: 100%;
+  @media (max-width: 900px) {
     order: 1;
+    justify-self: stretch;
   }
 `;
 
 const Home = () => {
   return (
     <SectionWrapper id="cta-scroll" className="about cta-section">
-      
-
-      <LeftContainer
-        data-scroll
-        data-scroll-sticky
-        data-croll-direction="#cta-scroll"
-      >
-     <p className="end-tezxt"
-        data-scroll data-scroll-speed="-2">
-          CreateX is a digital agency based in London <br />
-          our aim is to win awwwards as being part of its community <br />
-          Not just awwwards to, we won't to provide our customers with <br />
-          the best digital experience they could ever imagine of.
-      </p> 
-      </LeftContainer>
-       
-      <TextWrapper >
-        <p className="header-sl-new"
-        data-scroll data-scroll-speed="-2">WORK WITH US</p> 
-      </TextWrapper>
+      <CtaInner>
+        <HeadingBlock>
+          <p
+            className="header-sl-new"
+            data-scroll
+            data-scroll-speed="-2"
+          >
+            WORK WITH US
+          </p>
+        </HeadingBlock>
+        <CopyBlock
+          data-scroll
+          data-scroll-sticky
+          data-croll-direction="#cta-scroll"
+        >
+          <p className="end-tezxt" data-scroll data-scroll-speed="-2">
+            CreateX is a digital agency based in London <br />
+            our aim is to win awwwards as being part of its community <br />
+            Not just awwwards to, we won&apos;t to provide our customers with{' '}
+            <br />
+            the best digital experience they could ever imagine of.
+          </p>
+        </CopyBlock>
+      </CtaInner>
     </SectionWrapper>
   );
 };

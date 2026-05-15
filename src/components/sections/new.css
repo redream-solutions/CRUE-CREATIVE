@@ -2,46 +2,48 @@
     font-family: domaine;
     src: url(/src/assets/font/Domaine\ Sans\ Fine\ Regular\ Regular.woff);
 }
-.header-sl-new{
-    position: absolute;
+
+.cta-section .header-sl-new {
+    position: relative;
+    top: auto;
+    left: auto;
     font-family: domaine;
     text-transform: uppercase;
-    font-size: clamp(2.5rem, 12vw, 10em);
-    top: 68%;
-    left: 5%;
-    max-width: 90%;
-    line-height: 0.95;
+    font-size: clamp(2.25rem, 8vw, 7.5rem);
+    line-height: 0.98;
+    margin: 0;
+    max-width: 100%;
     word-break: break-word;
+    overflow-wrap: break-word;
 }
-.end-tezxt{
-    position: absolute;
-    font-size: clamp(0.95rem, 2.8vw, 1.2em);
+
+.cta-section .end-tezxt {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    font-size: clamp(0.8rem, 1.35vw, 1.05em);
     font-family: domaine;
-    top: 2%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: min(36rem, 92%);
-    text-align: center;
-    padding: 0 0.5rem;
+    line-height: 1.65;
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    hyphens: auto;
+    overflow-wrap: break-word;
 }
-@media (max-width: 768px) {
-    .cta-section .header-sl-new {
-        position: relative;
-        top: auto;
-        left: auto;
-        max-width: 100%;
-        text-align: center;
-        margin: 0 auto;
-        padding: 0 0.25rem;
-    }
+
+@media (max-width: 900px) {
     .cta-section .end-tezxt {
-        position: relative;
-        top: auto;
-        left: auto;
-        transform: none;
-        width: 100%;
-        max-width: 100%;
-        padding: 0 0.25rem 1rem;
+        text-align: left;
+        font-size: clamp(0.85rem, 3.2vw, 1rem);
+    }
+
+    .cta-section .header-sl-new {
+        text-align: center;
     }
 }
